@@ -1,0 +1,38 @@
+Add array to configuation
+pure_exportadm --add_remote <array_name> --remote_address <ip address> --api_token <token>
+
+ Read from array print output
+ pure_exportadm.py --remotes <array_name> --printonly
+
+ Read from settings.yaml group print output
+ pure_exportadm.py --group_shares <group_name> --printonly
+
+ Read from file and write to array
+ pure_exportadm.py --load_from_file <file> --operation add_file
+
+ Add operation from settings group and printonly ( remove printonly to make changes directly to FB)
+ pure_exportadm.py --group_shares app3_shares --operation add --rules ro,no_root_squash --targets   10.23.56.78,99.100.34.0/24,100.100.100.10,20.30.40.50  --printonly
+
+Delete operation from settings group and only print what it would have done  ( remote printonly to make changes )
+pure_exportadm.py --group_shares <group_name> --operation delete --targets   10.23.56.78,99.100.34.0/24,100.100.100.10,20.30.40.50  --printonly
+
+Printonly using shares and remotes arguments and not using settings.yaml group settings.
+pure_exportadm.py --remotes <array_name> --file_shares JWoolf-NFS-Test1,JWoolf-NFS-Test2,zebra1,zebra2,zebra3,zebra4,zebra5 --printonly
+
+Printonly using group_shares option
+pure_exportadm.py  --group_shares <group_name> --printonly
+
+Add operation using remotes and file_shares arguments
+pure_exportadm.py --remotes GSE-FB01 --file_shares JWoolf-NFS-Test1,JWoolf-NFS-Test2,zebra1,zebra2,zebra3,zebra4,zebra5 --operation add --rules ro,no_root_squash --targets   10.23.56.78,99.100.34.0/24 --printonly
+
+Delete operation using remotes and file_shares arguments
+pure_exportadm.py --remotes GSE-FB01 --file_shares JWoolf-NFS-Test1,JWoolf-NFS-Test2,zebra1,zebra2,zebra3,zebra4,zebra5 --operation delete --targets   10.23.56.78,99.100.34.0/24
+
+Add from a file giving add arguments and only printing result not executing
+pure_exportadm.py --load_from_file nfsrules.json --rules rw,no_root_squash --targets 10.20.30.40,10.99.10.0/24 --operation add --printonly
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+{
+    "GSE-FB01": [
+        {
+            "name": "JWoolf-NFS-Test1",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24"
+        },
+        {
+            "name": "JWoolf-NFS-Test2",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        },
+        {
+            "name": "zebra1",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        },
+        {
+            "name": "zebra2",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        },
+        {
+            "name": "zebra3",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        },
+        {
+            "name": "zebra4",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        },
+        {
+            "name": "zebra5",
+            "rules": "-rw,no_root_squash,fileid_32bit 10.10.10.0/27 10.10.10.0/24 10.10.0.0/16(rw,no_root_squash)"
+        }
+    ]
+}

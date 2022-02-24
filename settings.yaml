@@ -1,0 +1,38 @@
+---
+
+SHARES:
+  app1_shares:
+    GSE-FB01:
+      - zebra1
+      - zebra2
+      - zebra3
+      - zebra4
+      - zebra5
+
+  app2_shares:
+    GSE-FB01:
+      - JWoolf-NFS-Test1
+      - JWoolf-NFS-Test2
+
+  app3_shares:
+    GSE-FB01:
+      - JWoolf-NFS-Test1
+      - JWoolf-NFS-Test2
+      - zebra1
+      - zebra2
+      - zebra3
+      - zebra4
+      - zebra5
+
+
+
+RULE_PROFILES:
+    ussjdpc: ro,root_squash,fileid_32bit
+
+
+HOST_PROFILES:
+  host_profile:
+    - network1
+    - host2
+
+
